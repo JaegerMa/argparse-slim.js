@@ -1,0 +1,28 @@
+{
+  "name": "argparse-slim",
+  "version": "1.0.0",
+  "description": "Slim interface for argparse package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaegerMa/argparse-slim.js.git"
+  },
+  "keywords": [
+    "argparse",
+    "slim",
+    "arguments",
+    "args"
+  ],
+  "author": "JaegerMa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JaegerMa/argparse-slim.js/issues"
+  },
+  "homepage": "https://github.com/JaegerMa/argparse-slim.js#readme",
+  "dependencies": {
+    "argparse": "^1.0.9"
+  }
+}

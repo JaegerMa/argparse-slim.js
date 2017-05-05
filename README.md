@@ -29,8 +29,8 @@ var parser = argparseSlim.from.sync('./options.json');
 //options.json content:
 /*
 {
-	options: OPTIONS,
-	args:
+	"options": OPTIONS,
+	"args":
 	[
 		[ addArgument params ],
 		[ addArgument params ],
@@ -77,31 +77,31 @@ var parser = argparseSlim.from(
 
 var parser = await argparseSlim.from('./options.json');
 
-var parser = argparseSli.from.sync('./options.json');
+var parser = argparseSlim.from.sync('./options.json');
 
 
 var parsed = parser.parseArgs();
 
 /* options.json
 {
-	options:
+	"options":
 	{
-		version: '1.0.0',
-		addHelp: true,
-		description: 'Slim interface for argparse'
+		"version": '1.0.0',
+		"addHelp": true,
+		"description": 'Slim interface for argparse'
 	}
-	args:
+	"args":
 	[
 		[
 			'-f', '--foo',
 			{
-				help: 'Foo'
+				"help": 'Foo'
 			}
 		],
 		[
 			'-b', '--bar',
 			{
-				help: 'Bar'
+				"help": 'Bar'
 			}
 		]
 	]

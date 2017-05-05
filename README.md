@@ -1,4 +1,4 @@
-# simple-merge
+# argparse-slim
   Slim interface for argparse package
 
 ```shell

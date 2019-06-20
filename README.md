@@ -1,23 +1,20 @@
 # argparse-slim
   Slim interface for argparse package
 
-```shell
-npm install --save argparse-slim
-```
 
 ## Usage
 
 ```js
 const argparseSlim = require('argparse-slim');
 
-var parser = argparseSlim.from(/* OPTIONS */,
+let parser = argparseSlim.from(/* OPTIONS */,
 [
 	[ /* addArgument params */ ],
 	[ /* addArgument params */ ],
 	[ /* addArgument params */ ]
 ]);
 
-var parser = await argparseSlim.from('./options.json');
+let parser = await argparseSlim.from('./options.json');
 
 argparseSlim.from('./options.json', (argparser) =>
 {
@@ -53,7 +50,7 @@ See argparse docu:
 ```js
 const argparseSlim = require('argparse-slim');
 
-var parser = argparseSlim.from(
+let parser = argparseSlim.from(
 	{
 		version: '1.0.0',
 		addHelp: true,
@@ -61,13 +58,13 @@ var parser = argparseSlim.from(
 	},
 	[
 		[
-			'-f', '--foo',
+			['-f', '--foo'],
 			{
 				help: 'Foo'
 			}
 		],
 		[
-			'-b', '--bar',
+			['-b', '--bar'],
 			{
 				help: 'Bar'
 			}
@@ -75,9 +72,9 @@ var parser = argparseSlim.from(
 	]
 );
 
-var parser = await argparseSlim.from('./options.json');
+let parser = await argparseSlim.from('./options.json');
 
-var parser = argparseSlim.from.sync('./options.json');
+let parser = argparseSlim.from.sync('./options.json');
 
 
 var parsed = parser.parseArgs();
@@ -86,22 +83,22 @@ var parsed = parser.parseArgs();
 {
 	"options":
 	{
-		"version": '1.0.0',
+		"version": "1.0.0",
 		"addHelp": true,
-		"description": 'Slim interface for argparse'
-	}
+		"description": "Slim interface for argparse"
+	},
 	"args":
 	[
 		[
-			'-f', '--foo',
+			["-f", "--foo"],
 			{
-				"help": 'Foo'
+				"help": "Foo"
 			}
 		],
 		[
-			'-b', '--bar',
+			["-b", "--bar"],
 			{
-				"help": 'Bar'
+				"help": "Bar"
 			}
 		]
 	]
